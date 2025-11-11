@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='ephemeral') }}
 
 {% set result = run_query("CALL `airbnb-clouddbt.Retail_DEV.Retail_Exchange_Rates_Dev`()") %}
 
